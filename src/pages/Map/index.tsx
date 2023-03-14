@@ -1,5 +1,5 @@
-import { Aside } from '@/components/Aside'
-import { Card } from '@/components/Card'
+import { Aside } from '~/Aside'
+import { Card } from '~/Card'
 
 import chevron from '@/assets/icons/chevron-bottom-blue.svg'
 import dog from '@/assets/images/dog.png'
@@ -14,6 +14,10 @@ import {
 } from './styles'
 
 export function Map() {
+  function handleFilterByPetType() {
+    // TO DO
+  }
+
   return (
     <Container>
       <Aside />

@@ -23,6 +23,9 @@ export function Select({ label, name, options }: SelectProps) {
       <FilterLabel htmlFor={name}>{label}</FilterLabel>
       <FilterWrapper>
         <FilterInput name={name} id={name}>
+          <FilterInputOption value="" disabled selected>
+            Selecione
+          </FilterInputOption>
           {options.map((option) => {
             return (
               <FilterInputOption key={option.value} value={option.value}>

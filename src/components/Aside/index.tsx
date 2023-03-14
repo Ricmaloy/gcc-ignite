@@ -15,36 +15,36 @@ import {
 const ageOptions = [
   {
     label: 'Filhote',
-    value: 'filhote',
+    value: 'cub',
   },
   {
-    label: 'Adulto',
-    value: 'adulto',
+    label: 'Adolescente',
+    value: 'adolescent',
   },
   {
     label: 'Idoso',
-    value: 'idoso',
+    value: 'elderly',
   },
 ]
 const energyOptions = [
   {
-    label: '01',
+    label: 'Muito baixa',
     value: 1,
   },
   {
-    label: '02',
+    label: 'Baixa',
     value: 2,
   },
   {
-    label: '03',
+    label: 'Média',
     value: 3,
   },
   {
-    label: '04',
+    label: 'Alta',
     value: 4,
   },
   {
-    label: '05',
+    label: 'Muito alta',
     value: 5,
   },
 ]
@@ -78,6 +78,14 @@ const independencyOptions = [
 ]
 
 export function Aside() {
+  function handleSearchPets() {
+    // TO DO
+  }
+
+  function handleChangeSearchFilters() {
+    // TO DO
+  }
+
   return (
     <Container>
       <AsideHeader>

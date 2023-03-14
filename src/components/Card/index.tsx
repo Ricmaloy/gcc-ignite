@@ -15,9 +15,9 @@ export function Card({ path, name, type }: CardProps) {
         <img src={path} alt={`Foto de ${name}`} />
       </PetImage>
       <div>
-        <TypeIcon type={type}>
+        <TypeIcon>
           <div
-            style={{ backgroundColor: type === 'cat' ? '#0D3B66' : '#F15156' }}
+            style={{ backgroundColor: type === 'cat' ? '#F4D35E' : '#F15156' }}
           >
             <img src={logo} alt="" />
           </div>

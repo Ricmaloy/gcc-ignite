@@ -1,73 +1,69 @@
 import styled from 'styled-components'
 
-export const Container = styled('div')({
-  maxWidth: '280px',
-  width: '100%',
-  display: 'flex',
-  alignItems: 'center',
-  flexDirection: 'column',
+export const Container = styled.div`
+  max-width: 280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-  padding: '3px',
-  borderRadius: '20px',
-  backgroundColor: '#FFFFFF',
-  overflow: 'hidden',
+  padding: 3px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
 
-  ':hover': {
-    backgroundColor: '#0D3B66',
+  &:hover {
+    background-color: #0d3b66;
 
-    div: {
-      backgroundColor: '#0D3B66',
-    },
+    div {
+      background-color: #0d3b66;
+    }
 
-    p: {
-      color: '#FFFFFF',
-    },
-  },
-})
+    p {
+      color: #ffffff;
+    }
+  }
+`
 
-interface TypeIconProps {
-  type: 'dog' | 'cat'
-}
+export const TypeIcon = styled.div`
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -30px;
+  padding: 2px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
 
-export const TypeIcon = styled('div')<TypeIconProps>({
-  width: '48px',
-  height: '48px',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  margin: '0 auto',
-  marginTop: '-30px',
-  padding: '2px',
-  borderRadius: '10px',
-  overflow: 'hidden',
-  backgroundColor: '#FFFFFF',
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+  }
 
-  div: {
-    width: '100%',
-    height: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 'inherit',
-  },
+  img {
+    width: 15px;
+  }
+`
 
-  img: {
-    width: '15px',
-  },
-})
+export const PetImage = styled.div`
+  object-fit: cover;
 
-export const PetImage = styled('div')({
-  objectFit: 'cover',
+  img {
+    width: 100%;
+  }
+`
 
-  img: {
-    width: '100%',
-  },
-})
-
-export const Name = styled('p')({
-  fontSize: '18px',
-  lineHeight: '21.6px',
-  fontWeight: '700',
-  margin: '8px auto 17px',
-  color: '#0D3B66',
-})
+export const Name = styled.p`
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 700;
+  margin: 8px auto 17px;
+  color: #0d3b66;
+`
