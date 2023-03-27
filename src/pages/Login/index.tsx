@@ -12,6 +12,14 @@ import LogoHorizontal from '../../assets/icons/logo-horizontal.svg'
 import Pets from '../../assets/icons/pets.svg'
 
 export function Login() {
+  function handleLogin() {
+    // TO DO
+  }
+
+  function handleRegisterOrganization() {
+    // TO DO
+  }
+
   return (
     <Wrapper>
       <Container>
@@ -32,16 +40,16 @@ export function Login() {
               id="password"
               placeholder="Senha"
             />
-          </Form>
 
-          <Buttons>
-            <Button onClick={() => {}} className="primary">
-              Login
-            </Button>
-            <Button onClick={() => {}} className="secondary">
-              Cadastrar minha organização
-            </Button>
-          </Buttons>
+            <Buttons>
+              <Button type="submit" onClick={() => {}} className="primary">
+                Login
+              </Button>
+              <Button type="button" onClick={() => {}} className="secondary">
+                Cadastrar minha organização
+              </Button>
+            </Buttons>
+          </Form>
         </FormWrapper>
       </Container>
     </Wrapper>
