@@ -10,6 +10,7 @@ import {
 
 import LogoHorizontal from '../../assets/icons/logo-horizontal.svg'
 import Pets from '../../assets/icons/pets.svg'
+import Eye from '../../assets/icons/password-eye.svg'
 
 export function Login() {
   function handleLogin() {
@@ -31,15 +32,20 @@ export function Login() {
           <h1>Boas-vindas!</h1>
           <Form>
             <label htmlFor="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="Email" />
+            <div>
+              <input type="text" name="email" id="email" placeholder="Email" />
+            </div>
 
             <label htmlFor="password">Senha</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Senha"
-            />
+            <div>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Senha"
+              />
+              <img onClick={() => {}} src={Eye} alt="" />
+            </div>
 
             <Buttons>
               <Button type="submit" onClick={() => {}} className="primary">

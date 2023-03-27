@@ -54,6 +54,16 @@ export const Form = styled.form`
   flex-direction: column;
   gap: 15px;
 
+  > div {
+    display: flex;
+    width: 100%;
+
+    background-color: #f5f8fa;
+    border: 1px solid #d3e2e5;
+    border-radius: 10px;
+    padding: 18px;
+  }
+
   label {
     font-size: 16px;
     font-weight: 600;
@@ -66,11 +76,13 @@ export const Form = styled.form`
     font-size: 18px;
     font-weight: 600;
     color: #0d3b66;
-    border-radius: 10px;
-    padding: 18px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
 
-    background-color: #f5f8fa;
-    border: 1px solid #d3e2e5;
+  img {
+    cursor: pointer;
   }
 `
 
