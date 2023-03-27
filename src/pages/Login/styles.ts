@@ -49,20 +49,20 @@ export const FormWrapper = styled.div`
   }
 `
 
+export const InputWrapper = styled.div`
+  display: flex;
+  width: 100%;
+
+  background-color: #f5f8fa;
+  border: 1px solid #d3e2e5;
+  border-radius: 10px;
+  padding: 18px;
+`
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 15px;
-
-  > div {
-    display: flex;
-    width: 100%;
-
-    background-color: #f5f8fa;
-    border: 1px solid #d3e2e5;
-    border-radius: 10px;
-    padding: 18px;
-  }
 
   label {
     font-size: 16px;

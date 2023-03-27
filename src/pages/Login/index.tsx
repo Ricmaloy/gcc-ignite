@@ -4,6 +4,7 @@ import {
   Card,
   FormWrapper,
   Form,
+  InputWrapper,
   Buttons,
   Button,
 } from './styles'
@@ -32,12 +33,12 @@ export function Login() {
           <h1>Boas-vindas!</h1>
           <Form>
             <label htmlFor="email">Email</label>
-            <div>
+            <InputWrapper>
               <input type="text" name="email" id="email" placeholder="Email" />
-            </div>
+            </InputWrapper>
 
             <label htmlFor="password">Senha</label>
-            <div>
+            <InputWrapper>
               <input
                 type="password"
                 name="password"
@@ -45,7 +46,7 @@ export function Login() {
                 placeholder="Senha"
               />
               <img onClick={() => {}} src={Eye} alt="" />
-            </div>
+            </InputWrapper>
 
             <Buttons>
               <Button type="submit" onClick={() => {}} className="primary">
