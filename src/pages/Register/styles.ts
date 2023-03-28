@@ -45,7 +45,7 @@ export const FormWrapper = styled.div`
   width: 488px;
   height: 661px;
   display: block;
-  overflow: scroll;
+  overflow-y: auto;
 
   h1 {
     font-size: 54px;
