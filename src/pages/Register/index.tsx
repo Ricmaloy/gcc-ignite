@@ -73,7 +73,7 @@ export function Register() {
               <img onClick={() => {}} src={Eye} alt="" />
             </InputWrapper>
 
-            <label htmlFor="confirmPassword">Senha</label>
+            <label htmlFor="confirmPassword">Confirmar senha</label>
             <InputWrapper>
               <input
                 type="password"

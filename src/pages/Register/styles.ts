@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -26,6 +26,7 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  align-self: center;
 
   position: sticky;
   left: 0;
@@ -42,9 +43,9 @@ export const Card = styled.div`
 
 export const FormWrapper = styled.div`
   width: 488px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  height: 661px;
+  display: block;
+  overflow: scroll;
 
   h1 {
     font-size: 54px;
